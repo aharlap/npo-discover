@@ -1,5 +1,5 @@
 //Organization collections
-CategoryCodes = new Mongo.Collection( 'categories' );
+CategoryCodes = new Mongo.Collection( 'categoriesCodes' );
 
 categoryCodeSchema = new SimpleSchema({
 	//schema for category codes
