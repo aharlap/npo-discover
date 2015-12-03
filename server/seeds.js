@@ -3,14 +3,13 @@ Meteor.startup(function () {
 
 	// if there are no orgs, create sample data
 
-	if (Orgs.find().count() === 0) {
+	if (CategoryCodes.find().count() === 0) {
 
-		// create sample org
-		var sampleOrgs = [{}];
+		// sample data in seeds/categoryCodes.js
 
-		// insert each sample org into database
-		_.each(sampleOrgs, function(org) {
-			Surveys.insert(org);
+		// insert each sample code into database
+		_.each(categoryCodes2013 function(categoryCode) {
+			CategoryCodes.insert(categoryCode);
 		});
 	}	
 });
